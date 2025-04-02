@@ -1,0 +1,93 @@
+{
+    "pacientes": [
+        {
+            "id": 1,
+            "documento": "12345678",
+            "fechaNacimiento": "2002-06-01",
+            "nombre": "Martin Cantillo",
+            "citas": []
+        },
+        {
+            "id": 2,
+            "documento": "87654321",
+            "fechaNacimiento": "2001-05-05",
+            "nombre": "Omar Hernandez",
+            "citas": []
+        },
+        {
+            "id": 3,
+            "documento": "11223344",
+            "fechaNacimiento": "2005-03-06",
+            "nombre": "Allison Mejía",
+            "citas": []
+        }
+    ],
+
+    "citas": [
+        {
+            "id": 1,
+            "pacienteId": null,
+            "direccion": "Calle 1",
+            "fecha": "2025-04-04",
+            "hora": "10:00",
+            "idEspecialidad": 1,
+            "idEstado": 1
+        },
+        {
+            "id": 2,
+            "pacienteId": null,
+            "direccion": "Calle 2",
+            "fecha": "2025-04-04",
+            "hora": "11:30",
+            "idEspecialidad": 2,
+            "idEstado": 1
+
+        },
+        {
+            "id": 3,
+            "pacienteId": null,
+            "direccion": "Calle 3",
+            "fecha": "2025-04-05",
+            "hora": "1:30",
+            "idEspecialidad": 1,
+            "idEstado": 1
+
+        },
+        {
+            "id": 4,
+            "pacienteId": null,
+            "direccion": "Calle 4",
+            "fecha": "2025-04-05",
+            "hora": "2:00",
+            "idEspecialidad": 2,
+            "idEstado": 1
+
+        }
+    ],
+
+    "especialidades": [
+        {
+            "id": 1,
+            "nombre": "Medicina general"
+        },
+        {
+            "id": 2,
+            "nombre": "Examen odontológico"
+        }
+    ],
+
+    "estados": [
+        {
+            "id": 1,
+            "nombre": "Disponible"
+        },
+        {
+            "id": 2,
+            "nombre": "Reservada"
+        },
+        {
+            "id": 3,
+            "nombre": "Cancelada"
+        }
+    ]
+}
