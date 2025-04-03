@@ -24,12 +24,12 @@ const FiltroEspecialidad = ({ setCitas }) => {
         setSelectedEspecialidad(especialidadSeleccionada);
 
         if (especialidadSeleccionada !== "") {
-            const especialidadId = especialidades.find(
+            const especialidad = especialidades.find(
                 (e) => e.nombre === especialidadSeleccionada
             )?.id;
 
-            if (especialidadId) {
-                const citasPorEspecialidad = await CitasServices.getCitasPorEspecialidad(especialidadId);
+            if (especialidad) {
+                const citasPorEspecialidad = await CitasServices.getCitasByEspecialidad(especialidad);
                 setCitas(citasPorEspecialidad);
             } else {
                 setCitas([]);
@@ -41,11 +41,11 @@ const FiltroEspecialidad = ({ setCitas }) => {
     }
 
     return (
-        <div className="mb-4 mt-4">
+        <div className="container">
             <select
                 value={selectedEspecialidad}
                 onChange={handleEspecialidades}
-                className="form-select mt-4 "
+                className="form-select"
                 required>
 
                 <option value="" >Seleccionar especialidad</option>

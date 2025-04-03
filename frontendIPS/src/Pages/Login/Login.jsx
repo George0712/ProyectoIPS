@@ -35,7 +35,7 @@ const Login = () => {
             onChange={(e) => setFechaNacimiento(e.target.value)} required/>
         </div>
         
-        <button className='btn btn-primary' type="submit" onClick={handleSubmit} >Continuar</button>
+        <button className='btn btn-primary' type="submit" onClick={handleSubmit} >Ingresar</button>
       </form>
     </div>
   );
