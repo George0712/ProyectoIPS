@@ -37,7 +37,6 @@ const FiltroEspecialidad = ({ setCitas }) => {
         } else {
             setCitas([]);
         }
-
     }
 
     return (
@@ -56,7 +55,7 @@ const FiltroEspecialidad = ({ setCitas }) => {
                 ))}
             </select>
         </div>
-    );
-};
+    )
+}
 
 export default FiltroEspecialidad;

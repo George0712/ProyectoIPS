@@ -14,4 +14,4 @@ export const formatearFecha = (fecha) => {
     const fechaFormateada = new Date(fecha).toLocaleDateString('es-ES', opciones);
 
     return fechaFormateada.charAt(0).toUpperCase() + fechaFormateada.slice(1);
-};
+}

@@ -1,117 +1,116 @@
 {
-    "pacientes": [
-        {
-            "id": 1,
-            "documento": "12345678",
-            "fechaNacimiento": "2002-06-01",
-            "nombre": "Martin Cantillo",
-            "citas": []
-        },
-        {
-            "id": 2,
-            "documento": "87654321",
-            "fechaNacimiento": "2001-05-05",
-            "nombre": "Omar Hernandez",
-            "citas": []
-        },
-        {
-            "id": 3,
-            "documento": "11223344",
-            "fechaNacimiento": "2005-05-06",
-            "nombre": "Allison Mejía",
-            "citas": []
-        }
-    ],
-
-    "citas": [
-        {
-            "id": 1,
-            "pacienteId": null,
-            "direccion": "Calle 1",
-            "fecha": "2025-04-04",
-            "hora": "10:00",
-            "idEspecialidad": 1,
-            "idEstado": 1
-        },
-        {
-            "id": 2,
-            "pacienteId": null,
-            "direccion": "Calle 2",
-            "fecha": "2025-04-04",
-            "hora": "11:30",
-            "idEspecialidad": 2,
-            "idEstado": 1
-
-        },
-        {
-            "id": 3,
-            "pacienteId": null,
-            "direccion": "Calle 3",
-            "fecha": "2025-04-05",
-            "hora": "1:30",
-            "idEspecialidad": 3,
-            "idEstado": 1
-
-        },
-        {
-            "id": 4,
-            "pacienteId": null,
-            "direccion": "Calle 4",
-            "fecha": "2025-04-05",
-            "hora": "2:00",
-            "idEspecialidad": 1,
-            "idEstado": 1
-
-        },
-        {
-            "id": 5,
-            "pacienteId": null,
-            "direccion": "Calle 5",
-            "fecha": "2025-04-05",
-            "hora": "2:00",
-            "idEspecialidad": 2,
-            "idEstado": 1
-
-        },
-        {
-            "id": 6,
-            "pacienteId": null,
-            "direccion": "Calle 6",
-            "fecha": "2025-04-05",
-            "hora": "2:00",
-            "idEspecialidad": 3,
-            "idEstado": 1
-
-        }
-    ],
-
-    "especialidades": [
-        {
-            "id": 1,
-            "nombre": "Medicina general"
-        },
-        {
-            "id": 2,
-            "nombre": "Examen odontológico"
-        },
-        {
-            "id": 3,
-            "nombre": "Ortopedia"
-        }
-    ],
-
-    "estados": [
-        {
-            "id": 1,
-            "nombre": "Disponible"
-        },
-        {
-            "id": 2,
-            "nombre": "Reservada"
-        },
-        {
-            "id": 3,
-            "nombre": "Cancelada"
-        }
-    ]
+  "pacientes": [
+    {
+      "id": "1",
+      "documento": "12345678",
+      "fechaNacimiento": "2002-06-01",
+      "nombre": "Martin Cantillo"
+    },
+    {
+      "id": "2",
+      "documento": "87654321",
+      "fechaNacimiento": "2001-05-05",
+      "nombre": "Omar Hernandez"
+    },
+    {
+      "id": "3",
+      "documento": "11223344",
+      "fechaNacimiento": "2005-05-06",
+      "nombre": "Allison Mejía"
+    }
+  ],
+  "citas": [
+    {
+      "id": "1",
+      "pacienteId": null,
+      "direccion": "Calle 1",
+      "fecha": "2025-04-04",
+      "hora": "10:00 AM",
+      "idEspecialidad": 1,
+      "idEstado": 1
+    },
+    {
+      "id": "2",
+      "pacienteId": null,
+      "direccion": "Calle 2",
+      "fecha": "2025-04-04",
+      "hora": "10:30 AM",
+      "idEspecialidad": 2,
+      "idEstado": 1
+    },
+    {
+      "id": "3",
+      "pacienteId": null,
+      "direccion": "Calle 3",
+      "fecha": "2025-04-05",
+      "hora": "11:30 PM",
+      "idEspecialidad": 1,
+      "idEstado": 1
+    },
+    {
+      "id": "4",
+      "pacienteId": null,
+      "direccion": "Calle 4",
+      "fecha": "2025-04-05",
+      "hora": "2:00 PM",
+      "idEspecialidad": 2,
+      "idEstado": 1
+    },
+    {
+      "id": "5",
+      "pacienteId": null,
+      "direccion": "Calle 5",
+      "fecha": "2025-04-05",
+      "hora": "2:00 PM",
+      "idEspecialidad": 1,
+      "idEstado": 1
+    },
+    {
+      "id": "6",
+      "pacienteId": null,
+      "direccion": "Calle 6",
+      "fecha": "2025-04-05",
+      "hora": "2:00 PM",
+      "idEspecialidad": 2,
+      "idEstado": 1
+    },
+    {
+      "id": "7",
+      "pacienteId": null,
+      "direccion": "Calle 7",
+      "fecha": "2025-05-01",
+      "hora": "2:00 PM",
+      "idEspecialidad": 1,
+      "idEstado": 1
+    },
+    {
+      "id": "8",
+      "pacienteId": null,
+      "direccion": "Calle 8",
+      "fecha": "2025-05-01",
+      "hora": "2:00 PM",
+      "idEspecialidad": 2,
+      "idEstado": 1
+    }
+  ],
+  "especialidades": [
+    {
+      "id": "1",
+      "nombre": "Medicina general"
+    },
+    {
+      "id": "2",
+      "nombre": "Examen odontológico"
+    }
+  ],
+  "estados": [
+    {
+      "id": "1",
+      "nombre": "Disponible"
+    },
+    {
+      "id": "2",
+      "nombre": "Reservada"
+    }
+  ]
 }

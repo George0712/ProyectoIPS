@@ -8,7 +8,7 @@ const AppRouter = () => {
             <Route path="/" element={<Login />} />
             <Route path="/citas" element={<Citas />} />
         </Routes>
-    );
-};
+    )
+}
 
 export default AppRouter;

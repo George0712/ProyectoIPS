@@ -1,29 +1,43 @@
+import axios from "axios";
+
 const Url = "http://localhost:5000/pacientes";
 
 const PacientesServices = {
     async getPacientes() {
-        const response = await fetch(Url);
-        const data = await response.json();
-        return data;
+        try {
+            const response = await axios.get(Url);
+            return response.data;
+        } catch (error) {
+            console.error("Error al obtener los pacientes:", error.message);
+            throw new Error("No se pudieron cargar los pacientes. Inténtalo de nuevo.");
+        }
     },
 
     async authPaciente(documento, fechaNacimiento) {
-        const response = await fetch(Url);
-        const data = await response.json();
-        console.log(data);
+        try {
+            const response = await axios.get(Url);
+            const data = response.data;
 
-        const formattedFechaNacimiento = fechaNacimiento.split("/").reverse().join("-");
+            console.log("Pacientes obtenidos:", data);
 
-        const paciente = data.find(p => p.documento === documento && p.fechaNacimiento === formattedFechaNacimiento);
+            const formattedFechaNacimiento = fechaNacimiento.split("/").reverse().join("-");
 
-        if (paciente) {
-            localStorage.setItem("id", paciente.id);
-            localStorage.setItem("nombre", paciente.nombre);
-            console.log(paciente);
-            return paciente;
+            const paciente = data.find(p => p.documento === documento && p.fechaNacimiento === formattedFechaNacimiento);
+
+            if (paciente) {
+                localStorage.setItem("id", paciente.id);
+                localStorage.setItem("nombre", paciente.nombre);
+                console.log("Paciente autenticado:", paciente);
+                return paciente;
+            } else {
+                console.warn("No se encontró el paciente.");
+                return null;
+            }
+        } catch (error) {
+            console.error("Error en la autenticación del paciente:", error.message);
+            throw new Error("No se pudo autenticar el paciente. Verifica los datos e inténtalo de nuevo.");
         }
-        return null;
-    },
-};
+    }
+}
 
 export default PacientesServices;

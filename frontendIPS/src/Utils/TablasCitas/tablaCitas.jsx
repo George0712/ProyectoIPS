@@ -1,7 +1,7 @@
 import React from "react";
 import { formatearFecha } from "../FormatearFecha/formatterFecha";
 import { useState } from "react";
-import ModalReserva from "../../Components/Reservas/confirmarReserva";
+import ConfirmarReserva from "../../Components/Reservas/confirmarReserva";
 
 const TablaCitas = ({ citas, onSeleccionarCita }) => {
 
@@ -9,14 +9,15 @@ const TablaCitas = ({ citas, onSeleccionarCita }) => {
     const [citaSeleccionada, setCitaSeleccionada] = useState(null);
 
     {citaSeleccionada && (
-        <ModalReserva 
+        <ConfirmarReserva 
             cita={citaSeleccionada} 
             onClose={() => setCitaSeleccionada(null)}
         />
     )}
 
     return (
-        <div className="table-responsive">
+        <div>
+            <div className="table-responsive">
             <table className="table table-hover">
                 <thead>
                     <tr>
@@ -30,6 +31,7 @@ const TablaCitas = ({ citas, onSeleccionarCita }) => {
                         citas.map((cita) => (
                             <tr key={cita.id} onClick={() => onSeleccionarCita(cita)}
                             style={{ cursor: "pointer" }}
+                            
 >
                                 <td>{cita.direccion}</td>
                                 <td>{formatearFecha(cita.fecha)}</td>
@@ -38,12 +40,14 @@ const TablaCitas = ({ citas, onSeleccionarCita }) => {
                         ))
                     ) : (
                         <tr>
-                            <td colSpan="4" className="text-muted">No hay citas disponibles</td>
+                            <td colSpan="3" className="text-muted">No hay citas disponibles</td>
                         </tr>
                     )}
                 </tbody>
             </table>
         </div>
-    );
+        </div>
+        
+    )
 }
 export default TablaCitas;
