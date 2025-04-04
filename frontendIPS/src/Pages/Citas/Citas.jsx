@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import CitasComponent from "../../../Components/Citas/citasComponent";
-import EspecialidadComponent from "../../../Components/Especialidades/especialidadComponent";
-import CitasReservadas from "../../../Components/Citas/citasReservadasComponent";
-import NavBar from "../../../Components/Header/navBar";
-import Footer from "../../../Components/Footer/footer";
-import CitasServices from "../../../Services/Citas/citasServices";
+import NavBar from "../../Components/Header/navBar";
+import Footer from "../../Components/Footer/footer";
+import CitasComponent from "../../Components/Citas/CitasDisponibles/citasComponent";
+import CitasReservadasComponent from "../../Components/Citas/CitasReservadas/citasReservadasComponent";
+import EspecialidadComponent from "../../Components/Especialidades/especialidadComponent";
 
 const Citas = () => {
     const [citas, setCitas] = useState([]);
@@ -30,7 +29,7 @@ const Citas = () => {
                             </>
                         )}
 
-                        {vistaActiva === "reservadas" && <CitasReservadas />}
+                        {vistaActiva === "reservadas" && <CitasReservadasComponent />}
                         <Footer />
                     </div>
                 </div>

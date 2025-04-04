@@ -3,7 +3,6 @@ import PacientesServices from '../../Services/Pacientes/pacientesServices';
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-
   const [documento, setDocumento] = useState("");
   const [fechaNacimiento, setFechaNacimiento] = useState("");
   const [error, setError] = useState("");
