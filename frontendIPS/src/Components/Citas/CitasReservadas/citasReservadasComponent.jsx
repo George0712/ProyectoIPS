@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import CitasServices from "../../Services/Citas/citasServices";
-import TablaCitasReservadas from "../../Utils/TablasCitas/tablaReservadas";
+import CitasServices from "../../../Services/Citas/citasServices";
+import TablaCitasReservadas from "./tablaReservadas";
 
 
 const CitasReservadasComponent = () => {

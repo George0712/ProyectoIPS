@@ -1,5 +1,5 @@
 import React from "react";
-import FiltroEspecialidad from "../../Utils/FiltoEspecialidades/filtroEspecialidad";
+import FiltroEspecialidad from "./filtroEspecialidad";
 
 const EspecialidadComponent = ({ setCitas }) => {
     return (

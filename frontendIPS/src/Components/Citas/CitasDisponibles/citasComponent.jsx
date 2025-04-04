@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import TablaCitas from "../../Utils/TablasCitas/tablaCitas";
-import ConfirmarReserva from "../Reservas/confirmarReserva";
+import TablaCitas from "./tablaCitas";
+import ConfirmarReserva from "../../Reservas/confirmarReserva";
 
 const CitasComponent = ({ citas, cambiarVista }) => {
     const [citaSeleccionada, setCitaSeleccionada] = useState(null);

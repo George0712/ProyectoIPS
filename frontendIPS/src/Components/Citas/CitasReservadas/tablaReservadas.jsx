@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { formatearFecha } from "../FormatearFecha/formatterFecha";
-import EspecialidadesServices from "../../Services/Especialidades/especialidadesServices";
+import { formatearFecha } from "../../../Utils/FormatearFecha/formatterFecha";
+import EspecialidadesServices from "../../../Services/Especialidades/especialidadesServices";
 
 const TablaReservadas = ({ citas, onCancelarCita }) => {
 

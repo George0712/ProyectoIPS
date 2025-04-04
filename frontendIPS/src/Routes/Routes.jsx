@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Login from "../Pages/Login/Login";
-import Citas from "../Pages/Citas/Citas";
+import Citas from "../Components/Citas/CitasDisponibles/Citas";
 
 const AppRouter = () => {
     return (

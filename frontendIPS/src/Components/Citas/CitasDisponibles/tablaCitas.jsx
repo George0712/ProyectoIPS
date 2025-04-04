@@ -1,7 +1,7 @@
 import React from "react";
-import { formatearFecha } from "../FormatearFecha/formatterFecha";
+import { formatearFecha } from "../../../Utils/FormatearFecha/formatterFecha";
 import { useState } from "react";
-import ConfirmarReserva from "../../Components/Reservas/confirmarReserva";
+import ConfirmarReserva from "../../Reservas/confirmarReserva";
 
 const TablaCitas = ({ citas, onSeleccionarCita }) => {
 

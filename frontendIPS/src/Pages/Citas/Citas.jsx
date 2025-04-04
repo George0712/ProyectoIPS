@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import CitasComponent from "../../Components/Citas/citasComponent";
-import EspecialidadComponent from "../../Components/Especialidades/especialidadComponent";
-import CitasReservadas from "../../Components/Citas/citasReservadasComponent";
-import NavBar from "../../Components/Header/navBar";
-import Footer from "../../Components/Footer/footer";
-import CitasServices from "../../Services/Citas/citasServices";
+import CitasComponent from "../../../Components/Citas/citasComponent";
+import EspecialidadComponent from "../../../Components/Especialidades/especialidadComponent";
+import CitasReservadas from "../../../Components/Citas/citasReservadasComponent";
+import NavBar from "../../../Components/Header/navBar";
+import Footer from "../../../Components/Footer/footer";
+import CitasServices from "../../../Services/Citas/citasServices";
 
 const Citas = () => {
     const [citas, setCitas] = useState([]);
